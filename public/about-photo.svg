@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="About section image placeholder">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#F7F3EE"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5A6F3C" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5A6F3C" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" rx="28" fill="url(#paper)"/>
+  <rect x="48" y="48" width="1104" height="804" rx="22" fill="#FFFFFF" opacity="0.55"/>
+
+  <g fill="none" stroke="#E1D7C9" stroke-width="3" opacity="0.9">
+    <path d="M120 240 H1080"/>
+    <path d="M120 320 H1080"/>
+    <path d="M120 400 H760"/>
+  </g>
+
+  <g transform="translate(620 460)">
+    <path d="M0 240 C 110 140 210 40 260 -60 C 300 -140 260 -210 170 -240 C 70 -270 -30 -220 -90 -140 C -150 -60 -140 60 -90 140 C -50 210 -10 230 0 240Z" fill="url(#leaf)"/>
+    <path d="M0 240 C 18 150 36 30 34 -120" stroke="#5A6F3C" stroke-width="6" opacity="0.35"/>
+    <circle cx="-120" cy="-120" r="10" fill="#4A2E1F" opacity="0.12"/>
+    <circle cx="220" cy="-140" r="7" fill="#4A2E1F" opacity="0.12"/>
+  </g>
+</svg>
