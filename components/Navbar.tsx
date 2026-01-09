@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+import { useLang, useToggleLang } from "@/lib/i18n";
 import Link from "next/link";
 
 import { cn } from "@/lib/cn";
@@ -9,6 +11,8 @@ type NavbarProps = {
 };
 
 export function Navbar({ className }: NavbarProps) {
+  const lang = useLang();
+  const toggle = useToggleLang();
   return (
     <header
       className={cn(
@@ -17,17 +21,18 @@ export function Navbar({ className }: NavbarProps) {
       )}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 md:px-6">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/15 ring-1 ring-primary/25">
-            <span className="font-serif text-lg font-semibold text-primary">M</span>
+        <Link href="#home" className="flex items-center gap-3">
+          <div className="flex h-11 items-center rounded-xl bg-surface px-3 ring-1 ring-border">
+            <Image
+              src="/logo.png"
+              alt="Mudubayush logo"
+              width={260}
+              height={90}
+              priority
+              className="h-8 w-auto object-contain"
+            />
           </div>
-          <div className="leading-tight">
-            <div className="font-serif text-lg font-semibold tracking-tight text-foreground">
-              Mudubayush
-            </div>
-            <div className="text-xs font-medium text-foreground/70">Ayurveda & Wellness</div>
-          </div>
-        </div>
+        </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/80 md:flex">
           <Link href="#home" className="transition-colors hover:text-foreground">
@@ -42,7 +47,15 @@ export function Navbar({ className }: NavbarProps) {
           <Link href="#contact" className="transition-colors hover:text-foreground">
             Contact
           </Link>
-        </nav>
+          <div className="flex items-center gap-3">
+        <button
+          onClick={toggle}
+          className="text-sm font-semibold hover:text-primary focus:outline-none"
+        >
+          {lang === "en" ? "ಕನ್ನಡ" : "EN"}
+        </button>
+      </div>
+    </nav>
 
         <div className="flex items-center gap-3">
           <Link

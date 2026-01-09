@@ -22,8 +22,9 @@ function StatCard({ value, label }: { value: number; label: string }) {
 export function Stats({ className }: StatsProps) {
   const { ref, isInView } = useInViewOnce<HTMLDivElement>({ threshold: 0.2 });
 
-  const sessions = useCountUp({ to: 250, startWhen: isInView, durationMs: 1400 });
-  const years = useCountUp({ to: 15, startWhen: isInView, durationMs: 1200 });
+  const patients = useCountUp({ to: 50000, startWhen: isInView, durationMs: 1800 });
+  const years = useCountUp({ to: 50, startWhen: isInView, durationMs: 1500 });
+  const generations = useCountUp({ to: 3, startWhen: isInView, durationMs: 1000 });
 
   return (
     <section className={cn("py-16 md:py-24", className)}>
@@ -35,17 +36,17 @@ export function Stats({ className }: StatsProps) {
               Our impact
             </div>
             <h2 className="mt-6 font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              Small rituals. Big results.
+              Experience & Trust
             </h2>
             <p className="mt-4 max-w-xl text-base leading-7 text-foreground/80">
-              We focus on steady progress—healthier digestion, calmer sleep, improved energy, and a
-              clearer daily routine.
+              Our practice spans decades, thousands of patients, and three generations dedicated to traditional healing.
             </p>
           </div>
 
-          <div ref={ref} className="grid gap-6 sm:grid-cols-2">
-            <StatCard value={sessions} label="Successful Healing Sessions" />
-            <StatCard value={years} label="Years of Experience" />
+          <div ref={ref} className="grid gap-6 sm:grid-cols-3">
+            <StatCard value={patients} label="Patients Traditionally Treated" />
+            <StatCard value={years} label="Years of Traditional Practice" />
+            <StatCard value={generations} label="Generations of Knowledge" />
           </div>
         </div>
       </div>

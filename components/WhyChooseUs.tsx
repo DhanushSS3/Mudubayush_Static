@@ -34,7 +34,7 @@ export function WhyChooseUs({ className }: WhyChooseUsProps) {
               Why choose us
             </div>
             <h2 className="mt-6 font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              Care that feels grounded, calm, and complete.
+              Discover care rooted in ancient wisdom
             </h2>
             <p className="mt-4 text-base leading-7 text-foreground/80">
               We combine authentic practices with clear guidance so your healing path stays simple and
@@ -65,7 +65,7 @@ export function WhyChooseUs({ className }: WhyChooseUsProps) {
             <div className="mx-auto w-full max-w-sm">
               <div className="rounded-3xl border border-border bg-surface p-8 shadow-sm shadow-primary/10">
                 <Image
-                  src="/why-center.svg"
+                  src="/why.jpg"
                   alt="Herbal illustration"
                   width={900}
                   height={900}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { cn } from "@/lib/cn";
 
@@ -14,8 +15,18 @@ export function Footer({ className }: FooterProps) {
       <div className="mx-auto w-full max-w-6xl px-4 py-10 md:px-6">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <div className="font-serif text-lg font-semibold tracking-tight">Mudubayush</div>
-            <div className="mt-1 text-sm text-foreground/70">Ayurveda & Wellness</div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 items-center rounded-xl bg-surface px-3 ring-1 ring-border">
+                <Image
+                  src="/logo.png"
+                  alt="Mudubayush logo"
+                  width={260}
+                  height={90}
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
+            </div>
+            <div className="mt-2 text-sm text-foreground/70">Ayurveda & Wellness</div>
           </div>
 
           <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-foreground/75">

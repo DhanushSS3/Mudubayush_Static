@@ -15,7 +15,7 @@ export function About({ className }: AboutProps) {
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-border bg-surface shadow-sm shadow-primary/10">
               <Image
-                src="/about-photo.svg"
+                src="/about.jpg"
                 alt="Ayurveda ingredients and herbs"
                 width={1200}
                 height={900}
@@ -28,17 +28,19 @@ export function About({ className }: AboutProps) {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-xs font-semibold tracking-wide text-foreground/80">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                About our legacy
+                Our Core Identity
               </div>
 
               <h2 className="mt-6 font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Rooted in tradition. Guided by modern care.
+                An Ancestral Healing Tradition, Practiced Today
               </h2>
 
               <p className="mt-5 text-base leading-7 text-foreground/80">
-                Ayurveda is a time-tested system of healing that supports balance through food, herbs,
-                daily routines, and therapies. We combine classical wisdom with thoughtful guidance so
-                your wellness journey feels clear, gentle, and sustainable.
+                Mudubayush Wellness Pvt Ltd represents the continuation of a traditional healing system practiced in our family for generations. Rooted in Nati Vaidya and classical Ayurvedic principles, this knowledge has been preserved, refined, and responsibly passed down through our ancestors.
+
+For more than 50 years, this tradition was carried forward by Sri H. C. Eshwar Naik, who dedicated his life to supporting patients with bone injuries, joint disorders, ligament conditions, nerve-related issues, and movement limitations. Over the decades, he traditionally treated 50,000+ patients from across Karnataka and India.
+
+Today, this legacy continues through three generations, ensuring continuity of knowledge, discipline, and ethical responsibility.
               </p>
 
               <div className="mt-8 grid gap-4">

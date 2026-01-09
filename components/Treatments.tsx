@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/cn";
 import { Reveal } from "@/components/Reveal";
 
@@ -9,14 +10,17 @@ const treatments = [
   {
     title: "Abhyanga Therapy",
     desc: "Warm herbal oils and gentle strokes to relax the nervous system and nourish the skin.",
+    img: "/abhyanga.jpg",
   },
   {
     title: "Shirodhara Ritual",
     desc: "A calming stream of oil on the forehead to support sleep, clarity, and stress relief.",
+    img: "/shirodhara.jpg",
   },
   {
     title: "Panchakarma Care",
     desc: "A guided cleansing program designed to reset digestion, energy, and overall balance.",
+    img: "/panchakarma.jpg",
   },
 ];
 
@@ -43,7 +47,16 @@ export function Treatments({ className }: TreatmentsProps) {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {treatments.map((t, idx) => (
             <Reveal key={t.title} delayClassName={idx === 1 ? "delay-100" : idx === 2 ? "delay-200" : undefined}>
-              <div className="group h-full rounded-3xl border border-border bg-surface p-6 shadow-sm shadow-primary/5 transition-colors hover:bg-muted">
+              <div className="group h-full rounded-3xl border border-border bg-surface shadow-sm shadow-primary/5 transition-colors hover:bg-muted">
+                <Image
+                  src={t.img}
+                  alt={t.title}
+                  width={400}
+                  height={300}
+                  className="h-40 w-full rounded-t-3xl object-cover"
+                />
+
+                <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-primary/12 ring-1 ring-primary/20">
                     <span className="font-serif text-lg font-semibold text-primary">
@@ -63,6 +76,7 @@ export function Treatments({ className }: TreatmentsProps) {
                   <span className="inline-block transition-transform group-hover:translate-x-0.5">
                     →
                   </span>
+                </div>
                 </div>
               </div>
             </Reveal>

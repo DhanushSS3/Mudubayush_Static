@@ -17,32 +17,34 @@ export function Contact({ className }: ContactProps) {
                 Contact
               </div>
               <h2 className="mt-6 font-serif text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Let’s plan your wellness journey.
+                We’re here to help.
               </h2>
               <p className="mt-4 text-base leading-7 text-foreground/80">
-                Reach out for a consultation or ask a question. We’ll reply with available slots and a
-                simple next step.
+                Reach out by phone, email, or the form — we’ll respond promptly.
               </p>
 
               <div className="mt-8 grid gap-4">
                 <div className="rounded-3xl border border-border bg-surface p-6">
                   <div className="text-sm font-semibold">Address</div>
                   <div className="mt-2 text-sm leading-6 text-foreground/70">
-                    123 Ayurveda Lane, Wellness District
+                    Muduba Estate, Konkere
                     <br />
-                    Your City, Country
+                    Narasimharajapura Taluk, Chikkamagaluru – 577127
+                    <br />
+                    Karnataka, India
                   </div>
                 </div>
 
                 <div className="rounded-3xl border border-border bg-surface p-6">
                   <div className="text-sm font-semibold">Phone</div>
-                  <div className="mt-2 text-sm leading-6 text-foreground/70">+00 0000 000 000</div>
+                  <div className="mt-2 text-sm leading-6 text-foreground/70">+91 9880846053
+                    <br />+91 9741258242</div>
                 </div>
 
                 <div className="rounded-3xl border border-border bg-surface p-6">
                   <div className="text-sm font-semibold">Email</div>
                   <div className="mt-2 text-sm leading-6 text-foreground/70">
-                    hello@mudubayush.example
+                    info@mudubayush.com
                   </div>
                 </div>
               </div>
