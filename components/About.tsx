@@ -45,15 +45,15 @@ Today, this legacy continues through three generations, ensuring continuity of k
 
               <div className="mt-8 grid gap-4">
                 <div className="rounded-2xl border border-border bg-surface p-5">
-                  <div className="text-sm font-semibold">Personalized assessment</div>
+                  <div className="text-sm font-semibold">Movement-Focused Traditional Care</div>
                   <div className="mt-1 text-sm leading-6 text-foreground/70">
-                    Understand your prakriti and current imbalances before starting any plan.
+                    Support for bones, joints, muscles, ligaments, and mobility using time-tested traditional methods.
                   </div>
                 </div>
                 <div className="rounded-2xl border border-border bg-surface p-5">
-                  <div className="text-sm font-semibold">Herbal + lifestyle approach</div>
+                  <div className="text-sm font-semibold">Hands-On Healing Techniques</div>
                   <div className="mt-1 text-sm leading-6 text-foreground/70">
-                    Support digestion, sleep, and stress with small daily habits.
+                    Traditional manual techniques practiced through generations to support alignment, recovery, and movement.
                   </div>
                 </div>
               </div>
